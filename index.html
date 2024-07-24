@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>King's Pizza</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="./scripts/script.js" defer></script>
+</head>
+<body>
+    <div class="date-header">
+        <div class="date-header__cont">
+            <p id="sys-date">Fecha y hora del sistema: 00/00/00, 00:00</p>
+        </div>
+        <div class="date-header__cont">
+            <p id="mod-date">Fecha de modificación: 00/00/00, 00:00</p>
+        </div>
+    </div>
+    <div class="header">
+        <div class="header__logo">
+            <img src="./media/logo.jpg" alt="Knight's Pizza">
+        </div>
+        <div class="header__links__cont">
+            <div class="link__cont">
+                <a href="./index.html">Inicio</a>
+            </div>
+            <div class="link__cont">
+                <a href="./pages/menu.html">Menú</a>
+            </div>
+            <div class="link__cont" id="white">
+                <a href="./pages/ordenar.html">Ordenar</a>
+            </div>
+        </div>
+    </div>
+    <div class="hero">
+        <div class="hero__left">
+            <img src="./media/pagina-inicio.jpg" alt="">
+        </div>
+        <div class="hero__right">
+            <h1>La mejor pizza de Caracas</h1>
+            <p>Tenemos más de 15 años ofreciendo el mejor y más auténtico sabor de la capital</p>
+            <p>¿Qué esperas para probarlo?</p>
+            <button><a href="./pages/ordenar.html">Ordenar</a></button>
+        </div>
+    </div>
+    <div class="gallery">
+        <h2>Conoce nuestras pizzas</h3>
+        <div class="gallery__items">
+            <div class="gallery__items__pizza">
+                <img src="./media/pepperoni.jpg" alt="Pepperoni">
+                <p>Pepperoni</p>
+            </div>
+            <div class="gallery__items__pizza">
+                <img src="./media/margarita.jpg" alt="Margarita">
+                <p>Margarita</p>
+            </div>
+            <div class="gallery__items__pizza">
+                <img src="./media/capricciosa.jpg" alt="Capricciosa">
+                <p>Capricciosa</p>
+            </div>
+            <div class="gallery__items__pizza">
+                <img src="./media/hawaiana.jpg" alt="Hawaiana">
+                <p>Hawaiana</p>
+            </div>
+        </div>
+    </div>
+    <div class="info-text">
+        <p>Nos dedicamos a crear pizzas artesanales con ingredientes frescos y de la más alta calidad, para ofrecerte una experiencia culinaria única e inolvidable. Nuestra masa, preparada con una receta familiar que se ha transmitido de generación en generación, es la base perfecta para nuestras pizzas, que horneamos en horno de leña para lograr un sabor ahumado y crujiente irresistible.</p>
+        <p>Nuestro menú incluye una amplia variedad de pizzas clásicas y especiales, para satisfacer todos los gustos. Cada una de nuestras pizzas está elaborada con esmero y dedicación.</p>
+    </div>
+    <div class="contact">
+        <div class="contact__cont">
+            <h3>¿Quieres contactarte con un asesor telefónico?</h3>
+            <p>Ingresa tus datos y uno de nuestros asesores telefónicos te contactará lo antes posible</p>
+            <form action="" name="contact">
+                <div class="input-cont">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" placeholder="Tu nombre" id="nombre" onfocus="inputFocus(this.id)" onblur="inputBlur(this.id)" required>
+                </div>
+                <div class="input-cont">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" placeholder="Tu apellido" id="apellido" onfocus="inputFocus(this.id)" onblur="inputBlur(this.id)" required>
+                </div>
+                <div class="input-cont">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" name="telefono" placeholder="04XXXXXXXXX" id="telefono" pattern="[0][4][0-9]{9}" onfocus="inputFocus(this.id)" onblur="inputBlur(this.id)" required>
+                </div>
+                <input type="submit" value="Enviar" onclick="contactForm()">
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <p id="nav-version">Versión del Navegador:</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordenar</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <script src="../scripts/script.js" defer></script>
+</head>
+<body>
+    <div class="date-header">
+        <div class="date-header__cont">
+            <p id="sys-date">Fecha y hora del sistema: 00/00/00, 00:00</p>
+        </div>
+        <div class="date-header__cont">
+            <p id="mod-date">Fecha de modificación: 00/00/00, 00:00</p>
+        </div>
+    </div>
+    <div class="header">
+        <div class="header__logo">
+            <img src="../media/logo.jpg" alt="Knight's Pizza">
+        </div>
+        <div class="header__links__cont">
+            <div class="link__cont">
+                <a href="../index.html">Inicio</a>
+            </div>
+            <div class="link__cont">
+                <a href="./menu.html">Menú</a>
+            </div>
+            <div class="link__cont" id="white">
+                <a href="./ordenar.html">Ordenar</a>
+            </div>
+        </div>
+    </div>
+    <div class="title">
+        <h1>Ordena tu pizza</h1>
+    </div>
+    <div class="order">
+        <div class="order__cont">
+            <h3>Pide a distancia y a domicilio</h3>
+            <p>Nuestros asesores se encargarán de contactarte lo antes posible para hacerte llegar tu pedido.</p>
+            <form action="" name="order">
+                <div class="input-cont">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" placeholder="Tu nombre" id="nombre" onfocus="inputFocus(this.id)" onblur="inputBlur(this.id)" required>
+                </div>
+                <div class="input-cont">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" placeholder="Tu apellido" id="apellido" onfocus="inputFocus(this.id)" onblur="inputBlur(this.id)" required>
+                </div>
+                <div class="input-cont">
+                    <label for="direccion">Direccion</label>
+                    <input type="text" name="direccion" placeholder="Dirección de entrega" id="direccion" onfocus="inputFocus(this.id)" onblur="inputBlur(this.id)" required>
+                </div>
+                <div class="input-cont">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" name="telefono" placeholder="04XXXXXXXXX" id="telefono" pattern="[0][4][0-9]{9}" onfocus="inputFocus(this.id)" onblur="inputBlur(this.id)" required>
+                </div>
+                <div class="input-cont">
+                    <label for="tipoPizza">Pizza</label>
+                    <select name="tipoPizza" id="tipoPizza" required>
+                        <option value="pepperoni">Pepperoni</option>
+                        <option value="margarita">Margarita</option>
+                        <option value="capricciosa">Capricciosa</option>
+                        <option value="hawaiana">Hawaiana</option>
+                    </select>
+                </div>
+                <div class="input-cont">
+                    <label for="tamanno">Tamaño</label>
+                    <select name="tamanno" id="tamanno" required>
+                        <option value="pequenna">Pequeña (25cm)</option>
+                        <option value="mediana">Mediana (30cm)</option>
+                        <option value="familiar">Familiar (40cm)</option>
+                    </select>
+                </div>
+                <p><b>Tipo de queso</b></p>
+                <div class="option-cont">
+                    <div class="option-cont__item">
+                        <input type="checkbox" name="queso" value="mozzarella">
+                        <label for="queso">Mozzarella</label>
+                    </div>
+                    <div class="option-cont__item">
+                        <input type="checkbox" name="queso" value="cheddar">
+                        <label for="queso">Cheddar</label>
+                    </div>
+                    <div class="option-cont__item">
+                        <input type="checkbox" name="queso" value="parmesano">
+                        <label for="queso">Parmesano</label>
+                    </div>
+                </div>
+                <p><b>Método de pago</b></p>
+                <div class="option-cont">
+                    <div class="option-cont__item">
+                        <input type="radio" name="metodoPago" value="pagoMovil">
+                        <label for="metodoPago">Pago Móvil</label>
+                    </div>
+                    <div class="option-cont__item">
+                        <input type="radio" name="metodoPago" value="debito">
+                        <label for="metodoPago">Débito</label>
+                    </div>
+                    <div class="option-cont__item">
+                        <input type="radio" name="metodoPago" value="divisas">
+                        <label for="metodoPago">Divisas</label>
+                    </div>
+                </div>
+                <input type="submit" value="Enviar" onclick="orderForm()">
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <p id="nav-version">Versión del Navegador:</p>
+    </div>
+</body>
+</html>
